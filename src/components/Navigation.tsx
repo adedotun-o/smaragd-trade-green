@@ -27,7 +27,7 @@ const Navigation = () => {
               <img 
                 src="/lovable-uploads/771ea6f2-ec6d-44b7-91bd-dd63fdeeebe8.png" 
                 alt="Smaragd Logo" 
-                className="h-12 w-12"
+                className="h-12 w-auto object-contain"
               />
               <span className="text-2xl font-bold emerald-gradient bg-clip-text text-transparent">
                 SMARAGD
