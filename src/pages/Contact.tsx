@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import Map from "@/components/Map";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +22,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Head Office",
-      details: ["123 Financial District", "New York, NY 10004", "United States"]
+      details: ["17 Slobodana Bajica", "Novi Sad, Serbia", "21000"]
     },
     {
       icon: Phone,
@@ -180,18 +181,16 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section Placeholder */}
+      {/* Map Section */}
       <section className="px-4 py-16 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-7xl mx-auto">
-          <div className="aspect-[21/9] bg-muted rounded-2xl flex items-center justify-center">
-            <div className="text-center space-y-2">
-              <MapPin className="w-12 h-12 text-muted-foreground mx-auto" />
-              <p className="text-muted-foreground">Interactive Map</p>
-              <p className="text-sm text-muted-foreground">
-                Visit our offices in the heart of New York's Financial District
-              </p>
-            </div>
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-foreground mb-4">Visit Our Office</h2>
+            <p className="text-muted-foreground">
+              Find us at 17 Slobodana Bajica, Novi Sad, Serbia
+            </p>
           </div>
+          <Map />
         </div>
       </section>
     </div>
