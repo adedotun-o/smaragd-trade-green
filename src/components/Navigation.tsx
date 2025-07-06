@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Mail } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,11 +54,15 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
+          {/* Contact Email */}
           <div className="hidden md:block">
-            <Button variant="luxury" asChild>
-              <Link to="/contact">contact@smaragd.team</Link>
-            </Button>
+            <Link 
+              to="/contact" 
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-luxury"
+            >
+              <Mail className="w-4 h-4" />
+              <span>contact@smaragd.team</span>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -92,11 +96,14 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="pt-4">
-                <Button variant="luxury" className="w-full" asChild>
-                  <Link to="/contact" onClick={() => setIsOpen(false)}>
-                    contact@smaragd.team
-                  </Link>
-                </Button>
+                <Link 
+                  to="/contact" 
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center justify-center gap-2 text-muted-foreground hover:text-primary transition-luxury w-full py-2"
+                >
+                  <Mail className="w-4 h-4" />
+                  <span>contact@smaragd.team</span>
+                </Link>
               </div>
             </div>
           </div>
