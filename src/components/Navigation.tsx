@@ -57,7 +57,7 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="luxury" asChild>
-              <Link to="/contact">Get Started</Link>
+              <Link to="/contact">contact@smaragd.team</Link>
             </Button>
           </div>
 
@@ -94,7 +94,7 @@ const Navigation = () => {
               <div className="pt-4">
                 <Button variant="luxury" className="w-full" asChild>
                   <Link to="/contact" onClick={() => setIsOpen(false)}>
-                    Get Started
+                    contact@smaragd.team
                   </Link>
                 </Button>
               </div>
