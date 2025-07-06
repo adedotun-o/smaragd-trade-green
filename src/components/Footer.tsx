@@ -122,7 +122,7 @@ const Footer = () => {
       <div className="bg-primary-dark py-4 px-4 sm:px-6 lg:px-8 border-t border-white/10">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-white/60 text-sm">
-            © 2024 Smaragd Team. All rights reserved.
+            © 2025 Smaragd Team. All rights reserved.
           </p>
         </div>
       </div>
