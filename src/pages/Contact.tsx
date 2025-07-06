@@ -19,11 +19,6 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: MapPin,
-      title: "Head Office",
-      details: ["17 Slobodana Bajica", "Novi Sad, Serbia", "21000"]
-    },
-    {
       icon: Phone,
       title: "Phone",
       details: ["+1 (555) 123-4567", "+1 (555) 123-4568"]
