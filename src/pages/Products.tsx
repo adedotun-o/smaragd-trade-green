@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Coins, Gem, Atom, ArrowRight } from "lucide-react";
+import rareEarthImage from "@/assets/rare-earth-materials.jpg";
 
 const Products = () => {
   const productCategories = [
@@ -33,7 +34,7 @@ const Products = () => {
       icon: Atom,
       title: "Rare Earth Materials",
       description: "Strategic metals and minerals essential for technology and industry.",
-      image: "/lovable-uploads/d6a8f4d6-0930-49d2-8360-945975c58cee.png",
+      image: rareEarthImage,
       features: [
         "Critical Minerals",
         "Industrial Applications",
