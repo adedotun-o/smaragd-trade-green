@@ -106,7 +106,7 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <span>📞</span>
-                  <span>+1 (555) 123-4567</span>
+                  <span>+381628218141</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span>🌍</span>
