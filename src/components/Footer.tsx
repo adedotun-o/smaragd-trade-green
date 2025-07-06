@@ -1,84 +1,129 @@
 import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Check, Star } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo and Description */}
-          <div className="col-span-1 md:col-span-2 space-y-4">
-            <div className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/771ea6f2-ec6d-44b7-91bd-dd63fdeeebe8.png" 
-                alt="Smaragd Logo" 
-                className="h-10 w-auto object-contain"
-              />
-              <span className="text-xl font-bold emerald-gradient bg-clip-text text-transparent">
-                SMARAGD
-              </span>
-            </div>
-            <p className="text-muted-foreground max-w-md">
-              Premium trading in precious materials. Specializing in gold, precious stones, and rare earth materials with expert trans-Atlantic trade consulting.
+    <footer className="bg-primary text-primary-foreground">
+      {/* Newsletter Section */}
+      <div className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div className="space-y-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+              Stay Informed About Market Trends
+            </h2>
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
+              Get exclusive insights on precious metals, market analysis, and trading
+              opportunities delivered directly to your inbox.
             </p>
           </div>
-
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-muted-foreground hover:text-primary transition-luxury">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-muted-foreground hover:text-primary transition-luxury">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/products" className="text-muted-foreground hover:text-primary transition-luxury">
-                  Products
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-muted-foreground hover:text-primary transition-luxury">
-                  Services
-                </Link>
-              </li>
-            </ul>
+          
+          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <Input 
+              type="email" 
+              placeholder="Enter your email address" 
+              className="flex-1 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:bg-white/20"
+            />
+            <Button variant="gold" className="px-8">
+              Subscribe
+            </Button>
           </div>
-
-          {/* Contact Info */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Contact</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <li>Trading Excellence</li>
-              <li>Global Markets</li>
-              <li>
-                <Link to="/contact" className="hover:text-primary transition-luxury">
-                  Get in Touch
-                </Link>
-              </li>
-            </ul>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-white/80">
+            <div className="flex items-center justify-center gap-2">
+              <Check className="w-4 h-4 text-accent-gold" />
+              <span>Weekly market insights</span>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <Check className="w-4 h-4 text-accent-gold" />
+              <span>Exclusive trading opportunities</span>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <Check className="w-4 h-4 text-accent-gold" />
+              <span>Expert analysis & reports</span>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <Check className="w-4 h-4 text-accent-gold" />
+              <span>No spam, unsubscribe anytime</span>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-8 pt-8 border-t border-border">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-muted-foreground text-sm">
-              © 2024 Smaragd. All rights reserved.
-            </p>
-            <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-luxury">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-luxury">
-                Terms of Service
-              </a>
+      {/* Main Footer Content */}
+      <div className="bg-primary-dark/50 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Smaragd Team */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-white">SMARAGD TEAM</h3>
+              <p className="text-white/80 leading-relaxed">
+                Leading experts in precious metals and stones trading, offering
+                comprehensive consultation services for transnational high-
+                value goods commerce.
+              </p>
+              <div className="flex items-center gap-2 text-white/80">
+                <Star className="w-5 h-5 text-accent-gold" />
+                <span>Premium Quality • Global Reach • Trusted Excellence</span>
+              </div>
+            </div>
+
+            {/* Services */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-white">Services</h3>
+              <ul className="space-y-2 text-white/80">
+                <li>
+                  <Link to="/services" className="hover:text-accent-gold transition-luxury">
+                    Gold Trading
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className="hover:text-accent-gold transition-luxury">
+                    Precious Stones
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className="hover:text-accent-gold transition-luxury">
+                    Supply Chain Management
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className="hover:text-accent-gold transition-luxury">
+                    Trade Consultation
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-white">Contact</h3>
+              <ul className="space-y-2 text-white/80">
+                <li className="flex items-center gap-2">
+                  <span>✉</span>
+                  <span>contact@smaragd.team</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span>📞</span>
+                  <span>+1 (555) 123-4567</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span>🌍</span>
+                  <span>Global Operations</span>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Copyright */}
+      <div className="bg-primary-dark py-4 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-white/60 text-sm">
+            © 2024 Smaragd Team. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
