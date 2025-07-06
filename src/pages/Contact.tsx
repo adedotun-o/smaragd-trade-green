@@ -36,7 +36,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Monday - Friday: 9:00 AM - 6:00 PM EST", "24/7 Emergency Support Available"]
+      details: ["Monday - Friday: 9:00 AM - 6:00 PM EST"]
     }
   ];
 
@@ -174,17 +174,6 @@ const Contact = () => {
                     </CardContent>
                   </Card>
                 ))}
-              </div>
-
-              <div className="p-6 bg-secondary/50 rounded-xl">
-                <h3 className="font-semibold text-foreground mb-3">Emergency Support</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  For urgent trading matters or time-sensitive transactions, 
-                  our emergency support line is available 24/7.
-                </p>
-                <Button variant="outline" className="w-full">
-                  Call Emergency Line
-                </Button>
               </div>
             </div>
           </div>
