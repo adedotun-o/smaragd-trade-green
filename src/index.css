@@ -16,11 +16,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 150 8% 15%;
 
-    /* Primary - Rich Emerald */
-    --primary: 150 85% 25%;
+    /* Primary - Muted Emerald Green */
+    --primary: 150 45% 30%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 150 60% 35%;
-    --primary-dark: 150 95% 20%;
+    --primary-light: 150 35% 40%;
+    --primary-dark: 150 55% 25%;
 
     /* Secondary - Elegant Gray */
     --secondary: 150 5% 95%;
@@ -29,10 +29,10 @@
     --muted: 150 5% 96%;
     --muted-foreground: 150 5% 45%;
 
-    /* Accent - Luxury Gold */
-    --accent-gold: 45 90% 55%;
-    --accent-gold-light: 45 80% 65%;
-    --accent-gold-dark: 45 95% 45%;
+    /* Accent - Muted Gold */
+    --accent-gold: 45 50% 50%;
+    --accent-gold-light: 45 40% 60%;
+    --accent-gold-dark: 45 60% 40%;
     --accent: 150 30% 92%;
     --accent-foreground: 150 8% 15%;
 
@@ -87,10 +87,10 @@
     --popover: 150 15% 10%;
     --popover-foreground: 150 5% 95%;
 
-    --primary: 150 70% 45%;
+    --primary: 150 40% 45%;
     --primary-foreground: 150 15% 8%;
-    --primary-light: 150 60% 55%;
-    --primary-dark: 150 80% 35%;
+    --primary-light: 150 30% 55%;
+    --primary-dark: 150 50% 35%;
 
     --secondary: 150 10% 20%;
     --secondary-foreground: 150 5% 85%;
