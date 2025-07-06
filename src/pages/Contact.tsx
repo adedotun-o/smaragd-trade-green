@@ -6,7 +6,6 @@ import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import Map from "@/components/Map";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -181,16 +180,20 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Location Section */}
       <section className="px-4 py-16 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-8">
+          <div className="text-center">
             <h2 className="text-2xl font-bold text-foreground mb-4">Visit Our Office</h2>
-            <p className="text-muted-foreground">
-              Find us at 17 Slobodana Bajica, Novi Sad, Serbia
-            </p>
+            <div className="max-w-md mx-auto">
+              <div className="flex items-center justify-center gap-2 text-muted-foreground mb-2">
+                <MapPin className="w-5 h-5" />
+                <span className="font-medium">Our Location</span>
+              </div>
+              <p className="text-lg text-foreground">17 Slobodana Bajica</p>
+              <p className="text-foreground">Novi Sad, Serbia 21000</p>
+            </div>
           </div>
-          <Map />
         </div>
       </section>
     </div>
