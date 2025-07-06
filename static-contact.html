@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Smaragd</title>
+    <meta name="description" content="Contact Smaragd - Get in Touch for Trading Services">
+    <link rel="stylesheet" href="static-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <img src="public/lovable-uploads/771ea6f2-ec6d-44b7-91bd-dd63fdeeebe8.png" alt="Smaragd Logo" class="h-12">
+                    <span class="text-2xl font-bold gradient-text">SMARAGD</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex space-x-8">
+                        <a href="static-home.html" class="nav-link">Home</a>
+                        <a href="static-about.html" class="nav-link">About</a>
+                        <a href="static-products.html" class="nav-link">Products</a>
+                        <a href="static-services.html" class="nav-link">Services</a>
+                        <a href="static-contact.html" class="nav-link active">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="static-contact.html" class="flex items-center space-x-2 text-muted-foreground">
+                        <span>📧</span>
+                        <span>contact@smaragd.team</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="min-h-screen bg-background">
+        <!-- Hero Section -->
+        <section class="px-4 py-24 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto text-center space-y-8">
+                <div class="space-y-4">
+                    <h1 class="text-4xl sm:text-5xl font-bold">
+                        <span class="gradient-text">Contact Us</span>
+                    </h1>
+                    <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                        Ready to start your precious materials trading journey? 
+                        Our team of experts is here to provide personalized guidance and support.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info -->
+        <section class="px-4 py-16 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <!-- Contact Form -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="text-2xl font-bold">Send us a Message</h2>
+                        </div>
+                        <div class="card-content">
+                            <form class="space-y-6" onsubmit="handleSubmit(event)">
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <div class="form-group">
+                                        <label class="form-label" for="name">Full Name</label>
+                                        <input class="form-input" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="email">Email Address</label>
+                                        <input class="form-input" id="email" name="email" type="email" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="company">Company/Organization</label>
+                                    <input class="form-input" id="company" name="company">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="message">Message</label>
+                                    <textarea class="form-textarea" id="message" name="message" required rows="6" 
+                                              placeholder="Tell us about your trading needs or investment goals..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-luxury" style="width: 100%;">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="space-y-8">
+                        <div>
+                            <h2 class="text-2xl font-bold text-foreground mb-6">
+                                Get in Touch
+                            </h2>
+                            <p class="text-muted-foreground mb-8">
+                                Whether you're looking to trade precious materials, need consulting 
+                                for trans-Atlantic commerce, or seeking investment advice, we're here to help.
+                            </p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-12 h-12 emerald-gradient rounded-xl flex items-center justify-center">
+                                            <span class="text-2xl">📞</span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3 class="font-semibold text-foreground">Phone</h3>
+                                            <p class="text-muted-foreground text-sm">+1 (555) 123-4567</p>
+                                            <p class="text-muted-foreground text-sm">+1 (555) 123-4568</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-12 h-12 emerald-gradient rounded-xl flex items-center justify-center">
+                                            <span class="text-2xl">📧</span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3 class="font-semibold text-foreground">Email</h3>
+                                            <p class="text-muted-foreground text-sm">info@smaragd.com</p>
+                                            <p class="text-muted-foreground text-sm">trading@smaragd.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-12 h-12 emerald-gradient rounded-xl flex items-center justify-center">
+                                            <span class="text-2xl">🕒</span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3 class="font-semibold text-foreground">Business Hours</h3>
+                                            <p class="text-muted-foreground text-sm">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="px-4 py-16 sm:px-6 lg:px-8 bg-secondary-light">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-foreground mb-4">Visit Our Office</h2>
+                    <div class="max-w-md mx-auto">
+                        <div class="flex items-center justify-center gap-2 text-muted-foreground mb-2">
+                            <span class="text-2xl">📍</span>
+                            <span class="font-medium">Our Location</span>
+                        </div>
+                        <p class="text-lg text-foreground">17 Slobodana Bajica</p>
+                        <p class="text-foreground">Novi Sad, Serbia 21000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your inquiry. We will respond within 24 hours.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
